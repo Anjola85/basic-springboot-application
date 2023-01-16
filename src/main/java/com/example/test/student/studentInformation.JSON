@@ -1,0 +1,25 @@
+{
+  "students" : [
+    {
+      "name": "Bilal",
+      "email": "bilal@gmail.com",
+      "dob": "1995-12-07"
+    },
+    {
+      "name": "Esther",
+      "email": "esther@gmail.com",
+      "dob": "1998-10-02"
+    },
+    {
+      "name": "Sodiq",
+      "email": "sodiq@gmail.com",
+      "dob": "1999-02-07"
+    },
+    {
+      "name": "Fema",
+      "email": "fema@gmail.com",
+      "dob": "1995-19-07"
+    }
+  ]
+}
+

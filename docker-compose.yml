@@ -1,0 +1,29 @@
+# This file Helps specify services we can run
+version: '1.0'
+services:
+  #  name of service
+  db:
+    container_name: student
+    #    docker image
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: student
+      PGDATA: /data/postgres
+    volumes:
+      - db:/data/postgres
+    #    exposing the port
+    ports:
+      - "5333:5432"
+    networks:
+      - db
+    restart: unless-stopped
+
+networks:
+  db:
+    driver: bridge
+
+# defined volume
+volumes:
+  db:
